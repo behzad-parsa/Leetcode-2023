@@ -8,8 +8,16 @@ namespace Leetcode_2023
 {
     class Program
     {
-        static void Main(string[] args)
-        {
-        }
+        /* LeetCode 2023 Problems :
+         
+        1.
+         
+         
+         
+         
+         
+         
+         */
+
     }
 }
