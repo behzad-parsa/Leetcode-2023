@@ -85,9 +85,8 @@ namespace ValidParentheses
         public static bool IsValid(string s)
         {
             if (s.Length % 2 != 0)
-            {
                 return false;
-            }
+
             //keys = open brackets
             //values = close brack
             Dictionary<char, char> bracketsPair = new Dictionary<char, char>()
@@ -96,18 +95,16 @@ namespace ValidParentheses
                 {'{','}' },
                 {'(',')' }
             };
-            //case => ))
-            if (bracketsPair.ContainsValue(s[0]))
-                return false;
+
             Stack<char> stack = new Stack<char>();
 
             for (int i = 0; i < s.Length; i++)
             {
-                if (bracketsPair.ContainsKey(s[i]))
-                    stack.Push(s[i]);
-                //case => (){}}{
+                //case => (){}}{  or ))
                 if (stack.Count == 0 && bracketsPair.ContainsValue(s[i]))
                     return false;
+                if (bracketsPair.ContainsKey(s[i]))
+                    stack.Push(s[i]);
                 if (bracketsPair.ContainsValue(s[i]) && stack.Count > 0)
                 {
                     var lastElementStack = stack.Pop();
