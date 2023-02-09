@@ -22,12 +22,24 @@ namespace ValidParentheses
             string case5 = "))"; //false
             string case6 = "(){}}{"; //false
 
+
+
             Console.WriteLine(IsValid(case1));
             Console.WriteLine(IsValid(case2));
             Console.WriteLine(IsValid(case3));
             Console.WriteLine(IsValid(case4));
             Console.WriteLine(IsValid(case5));
             Console.WriteLine(IsValid(case6));
+
+            Console.WriteLine("--------------------------------------------------------------");
+
+            string case7 = "[()([])]"; 
+            Console.WriteLine(case7 +"\t" + IsValid(case7));
+            string case8 = "(())"; 
+            Console.WriteLine(case8 +"\t" + IsValid(case8));
+            string case9 = "[(])";
+            Console.WriteLine(case9 + "\t" + IsValid(case9));
+
 
             Console.ReadLine();
         }

@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Leetcode 2023", "Leetcode 2
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ValidParentheses", "ValidParentheses\ValidParentheses.csproj", "{C45E9078-8B21-4792-A19D-5763BD343F04}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NamingACompany", "NamingACompany\NamingACompany.csproj", "{5DE41E96-D45F-49A7-8F20-40F1C4FFE901}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{C45E9078-8B21-4792-A19D-5763BD343F04}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C45E9078-8B21-4792-A19D-5763BD343F04}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C45E9078-8B21-4792-A19D-5763BD343F04}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5DE41E96-D45F-49A7-8F20-40F1C4FFE901}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5DE41E96-D45F-49A7-8F20-40F1C4FFE901}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5DE41E96-D45F-49A7-8F20-40F1C4FFE901}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5DE41E96-D45F-49A7-8F20-40F1C4FFE901}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

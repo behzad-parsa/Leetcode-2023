@@ -11,7 +11,7 @@ namespace Leetcode_2023
         /* LeetCode 2023 Problems :
          
         1. Valid Parentheses  
-         
+        2. Naming A Company
          
          
          
