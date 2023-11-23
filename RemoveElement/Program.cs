@@ -16,7 +16,7 @@ namespace RemoveElement
             var nums = new[] { 3, 2, 2, 3 };
             var result = RemoveElement(nums,3);
 
-
+                    
         }
         public static int RemoveElement(int[] nums,int val)
         {
@@ -30,27 +30,9 @@ namespace RemoveElement
                 }
 
             }
-            //nums = nums.OrderByDescending(x=>x).ToArray();
             Array.Sort(nums);
             Array.Reverse(nums);
             return nums.Length - counter;
-            //return nums;
-        }
-        public static int[] Sort(int[] nums)
-        {
-            for (int i = 0; i < nums.Length; i++)
-            {
-                for (int j = 0; j < nums.Length - 1; j++)
-                {
-                    if (nums[j] > nums[j + 1])
-                    {
-                        int temp = nums[j];
-                        nums[j] = nums[j + 1];
-                        nums[j + 1] = temp;
-                    }
-                }
-            }
-            return nums;
         }
     }
 }

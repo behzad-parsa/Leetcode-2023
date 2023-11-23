@@ -13,6 +13,7 @@ namespace Leetcode_2023
         1. Valid Parentheses  
         2. Naming A Company
         3. Remove Element
+        4. Search Insert Position
          
          
          
