@@ -16,8 +16,6 @@ namespace SearchInsertPosition
             int[] arr = { 1, 3, 5, 7, 9, 11 };
             var result = SearchInsert(arr, 8);
 
-
-
         }
 
         private static int SearchInsert(int[] nums, int target)
@@ -36,7 +34,7 @@ namespace SearchInsertPosition
                 else
                     min = mid + 1;
             }
-            return (min > max) ? ++max : ++min;
+            return min;
         }
 
     }
