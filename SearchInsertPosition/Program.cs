@@ -13,30 +13,31 @@ namespace SearchInsertPosition
     {
         static void Main(string[] args)
         {
-            int[] arr = { 1, 2, 3, 4, 5, 6 };
-            var result = BinarySearch(arr,5);
+            int[] arr = { 1, 3, 5, 7, 9, 11 };
+            var result = SearchInsert(arr, 8);
 
 
 
         }
 
-        private static int BinarySearch(int[] inputArray, int key)
+        private static int SearchInsert(int[] nums, int target)
         {
             int min = 0;
-            int max = inputArray.Length - 1;
+            int max = nums.Length - 1;
 
             while (min <= max)
             {
                 int mid = (min + max) / 2;
-                if (key == inputArray[mid])
+                if (target == nums[mid])
                     return mid;
 
-                else if (key < inputArray[mid])
+                else if (target < nums[mid])
                     max = mid - 1;
                 else
                     min = mid + 1;
             }
-            return -1;
+            return (min > max) ? ++max : ++min;
         }
+
     }
 }
